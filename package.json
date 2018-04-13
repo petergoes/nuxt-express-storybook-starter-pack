@@ -12,9 +12,9 @@
     "lint": "npm-run-all lint:*",
     "lintfix:css": "npm run lint:css -- --fix",
     "lintfix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "precommit":
-      "npm run lint && precise-commits --whitelist='**/*.{vue,js,css}'",
+    "precommit": "npm run lint && precise-commits --whitelist='**/*.{vue,js,css}'",
     "start": "cross-env NODE_ENV=production node build/main.js",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest --watch",
     "test:ci": "jest"
   },
@@ -23,9 +23,14 @@
     "express": "4.16.3",
     "nuxt": "1.4.0",
     "source-map-support": "0.5.4",
-    "universal-fetch": "1.0.0"
+    "universal-fetch": "1.0.0",
+    "vue": "2.5.16"
   },
   "devDependencies": {
+    "@storybook/addon-knobs": "3.4.1",
+    "@storybook/addon-notes": "3.4.1",
+    "@storybook/addon-options": "3.4.1",
+    "@storybook/vue": "3.4.1",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.3",
     "babel-jest": "22.4.3",
