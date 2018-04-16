@@ -1,10 +1,15 @@
-# nuxt-express-starter-pack
+# nuxt-express-storybook-starter-pack
+
+This project is based on [nuxt-community express-template](https://github.com/nuxt-community/express-template)
+enhanced with storybook
+
+## nuxt-express-starter-pack
 
 > A starter pack for Nuxt with express
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
@@ -15,8 +20,11 @@ $ npm run dev
 $ npm start
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For detailed explanation on how things work, checkout the
+[Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
 ## Backpack
 
-We use [backpack](https://github.com/palmerhq/backpack) to watch and build the application, so you can use the latest ES6 features (module syntax, async/await, etc.).
+We use [backpack](https://github.com/palmerhq/backpack) to watch and build the
+application, so you can use the latest ES6 features (module syntax, async/await,
+etc.).
