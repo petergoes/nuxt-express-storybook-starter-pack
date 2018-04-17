@@ -52,6 +52,34 @@ following files, since you will never need to modify these files:
 * `build`: The generated server build folder
 * `dist`: The generated client dist folder
 
+### npm configuration
+
+When you install a new dependency via npm, you want to make sure you install it
+with a locked down version. So instead of:
+
+```json
+// Bad example
+{
+  //...
+  "jest": "^22.4.3"
+  //...
+}
+```
+
+do this:
+
+```json
+// Good example
+{
+  //...
+  "jest": "22.4.3"
+  //...
+}
+```
+
+You can configure npm to do this for you by using the command:
+`$ npm config set save-exact`. [Read more](https://github.com/voorhoede/npm-style-guide#use-save-exact-option)
+
 ### Running
 
 There are a couple of commands you can use while developing.
