@@ -17,7 +17,7 @@ const componentsStories = require.context(
 let docsStories
 
 if (process.env.NODE_ENV !== 'test') {
-  docsStories = require.context('../storybook', true, /\.story\.js$/)
+  docsStories = require.context('../_storybook', true, /\.story\.js$/)
 }
 
 components.keys().forEach(filename => {

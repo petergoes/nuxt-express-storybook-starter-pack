@@ -17,7 +17,7 @@
       "npm run lint && precise-commits --whitelist='**/*.{vue,js,css}'",
     "prepush": "npm run test:ci",
     "start": "cross-env NODE_ENV=production node build/main.js",
-    "storybook": "start-storybook -p 9001 -c storybook",
+    "storybook": "start-storybook -p 9001 -c _storybook",
     "test": "jest --watch",
     "test:ci": "jest"
   },
