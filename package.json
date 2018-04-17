@@ -4,6 +4,9 @@
   "description": "A starter pack for Nuxt with express and storybook",
   "author": "Peter Goes <petergoes@gmail.com>",
   "private": true,
+  "engines": {
+    "node": ">=8.11"
+  },
   "scripts": {
     "build": "nuxt build && backpack build",
     "dev": "backpack dev",
@@ -17,8 +20,8 @@
     "prepush": "npm run lint && npm run test:ci",
     "start": "cross-env NODE_ENV=production node build/main.js",
     "storybook": "start-storybook -p 9001 -c _storybook",
-    "test": "jest --watch",
-    "test:ci": "jest"
+    "test:ci": "jest",
+    "test": "jest --watch"
   },
   "dependencies": {
     "cross-env": "5.1.4",
