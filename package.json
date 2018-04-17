@@ -13,8 +13,7 @@
     "lintfix:css": "npm run lint:css -- --fix",
     "lintfix:js": "npm run lint:js -- --fix",
     "lintfix": "npm-run-all lintfix:*",
-    "precommit":
-      "npm run lint && precise-commits --whitelist='**/*.{vue,js,css}'",
+    "precommit": "precise-commits --whitelist='**/*.{vue,js,css}'",
     "prepush": "npm run test:ci",
     "start": "cross-env NODE_ENV=production node build/main.js",
     "storybook": "start-storybook -p 9001 -c _storybook",
