@@ -18,8 +18,9 @@ module.exports = {
   */
   css: ['~/assets/css/main.css'],
   /*
-  ** Add axios globally
+  ** Set the source directory
   */
+  srcDir: 'client/',
   build: {
     vendor: ['universal-fetch'],
 

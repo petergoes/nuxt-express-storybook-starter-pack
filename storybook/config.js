@@ -8,8 +8,12 @@ Vue.use(Vuex)
 
 setOptions({})
 
-const components = require.context('../components', true, /\.vue$/)
-const componentsStories = require.context('../components', true, /\.story\.js$/)
+const components = require.context('../client/components', true, /\.vue$/)
+const componentsStories = require.context(
+  '../client/components',
+  true,
+  /\.story\.js$/,
+)
 let docsStories
 
 if (process.env.NODE_ENV !== 'test') {

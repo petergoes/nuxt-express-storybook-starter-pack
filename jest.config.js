@@ -7,6 +7,6 @@ module.exports = {
   moduleFileExtensions: ['vue', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
     '\\.(md)$': 'identity-obj-proxy',
-    '^~(.*)$': '<rootDir>$1',
+    '^~(.*)$': '<rootDir>/client$1',
   },
 }
