@@ -26,6 +26,12 @@ module.exports = {
 
     // postcss: [require('stylelint'), require('postcss-reporter')],
 
+    postcss: [
+      require('autoprefixer'),
+      require('postcss-custom-properties'),
+      require('postcss-calc'),
+    ],
+
     plugins: [
       new StylelintPlugin({
         files: ['**/*.vue', '**/*.css'],
