@@ -10,6 +10,7 @@
   "scripts": {
     "build": "nuxt build && backpack build",
     "dev": "backpack dev",
+    "generate": "nuxt generate",
     "lint:css": "stylelint '**/*.{vue,css}'",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm-run-all lint:*",
