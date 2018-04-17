@@ -1,7 +1,3 @@
-import camelCase from 'lodash/camelCase'
-import upperFirst from 'lodash/upperFirst'
-import * as toKebabCase from 'lodash/kebabCase'
-import pipe from 'lodash/fp/pipe'
 import { configure } from '@storybook/vue'
 import { setOptions } from '@storybook/addon-options'
 
@@ -14,6 +10,11 @@ setOptions({})
 
 const components = require.context('../components', true, /\.vue$/)
 const componentsStories = require.context('../components', true, /\.story\.js$/)
+let docsStories
+
+if (process.env.NODE_ENV !== 'test') {
+  docsStories = require.context('../storybook', true, /\.story\.js$/)
+}
 
 components.keys().forEach(filename => {
   const [, componentName] = filename.match(/([\w-]+)(.vue)/)
@@ -21,6 +22,9 @@ components.keys().forEach(filename => {
 })
 
 function loadStories() {
+  if (process.env.NODE_ENV !== 'test') {
+    docsStories.keys().forEach(filename => docsStories(filename))
+  }
   componentsStories.keys().forEach(filename => componentsStories(filename))
 }
 

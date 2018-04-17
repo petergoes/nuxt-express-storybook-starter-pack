@@ -28,7 +28,7 @@ export default {
       .get('/api/users/' + params.id)
       .then(res => res.json())
       .then(json => ({ user: json }))
-      .catch(e => {
+      .catch(() => {
         error({ statusCode: 404, message: 'User not found' })
       })
   },

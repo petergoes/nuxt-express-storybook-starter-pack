@@ -11,13 +11,13 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm-run-all lint:*",
     "lintfix:css": "npm run lint:css -- --fix",
-    "lintfix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix:js": "npm run lint:js -- --fix",
     "lintfix": "npm-run-all lintfix:*",
     "precommit":
       "npm run lint && precise-commits --whitelist='**/*.{vue,js,css}'",
     "prepush": "npm run test:ci",
     "start": "cross-env NODE_ENV=production node build/main.js",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 9001 -c storybook",
     "test": "jest --watch",
     "test:ci": "jest"
   },
