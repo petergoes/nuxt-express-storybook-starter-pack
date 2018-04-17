@@ -4,7 +4,7 @@ let baseUrl = ''
 
 if (process.server) {
   baseUrl = `http://${process.env.HOST || 'localhost'}:${process.env.PORT ||
-    3000}`
+    6992}`
 }
 
 function get(uri) {
