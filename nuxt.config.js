@@ -27,6 +27,7 @@ module.exports = {
     // postcss: [require('stylelint'), require('postcss-reporter')],
 
     postcss: [
+      require('postcss-import'),
       require('autoprefixer'),
       require('postcss-custom-properties'),
       require('postcss-calc'),
